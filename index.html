@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a> -->
+  <a href="https://www.instagram.com/.aysh.__04?igsh=MWV4ZGE1cWZuaGY4ZA==" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="http://linkedin.com/in/ayush-khambayate-63471325b/" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-black">
+    <h1 class="w3-xxxlarge"><b>P O R T F O L I O</b></h1>
+    <h6>AYUSH KIRAN KHAMBAYATE</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="Ayush1.JPG" alt="Photo" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Get in Touch through</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b></b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-on"  style="border-radius: 10px;" onclick="document.getElementById('subscribe').style.display='block'"><a href="http://linkedin.com/in/ayush-khambayate-63471325b/" style="text-decoration: none;color: black;">Linked In</a></button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border w3-black">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large w3-dark-grey">
+        <div class="w3-center">
+          <h3>SUMMARY</h3>
+          <h5>Description <span class="w3-opacity"></span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="Ayush2.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong>More focused</strong>  on the details and results A software engineer with a strong academic background and an 8.62 CGPA at the moment. 
+            competent in machine learning, C, Java, C++, HTML/CSS, Data Structures, and SQL. demonstrates excellent time management,
+             communication, leadership, and team management skills. achieved an outstanding 87.67% completion rate in higher secondary education, 
+             together with a remarkable MHT-CET score of 99.12%. Developed numerous cutting-edge IoT and machine learning projects.
+              </p>
+          
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>More  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="achievements.png" style="width:50px;height: 70px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium">Certifications and Achievements</span></h4>
+                <p>IIT Madras certified in machine learning, MATLAB, and devops. Presented research at prestigious conferences with success, 
+                  and won awards in a number of hackathons and ideathons. Looking for chances to use my technological knowledge and support the success of the company.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      
+      <div class="w3-container w3-white w3-margin w3-padding-large ">
+        <div class="w3-center">
+          <h3>My Projects</h3>
+          <h5> <span class="w3-opacity">Clone App Detection Using VADERs Algorithm</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <!-- <img src="fraud.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16"> -->
+
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="fraud.jpg" alt="Images" class="d-block" style="width:100%">
+                <div class="carousel-caption" style="padding-top: 10px;">
+                  <h3>User Interface</h3>
+                  <p>PHP Based</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="fraud1.jpg" alt="Images" class="d-block" style="width:100%">
+                <div class="carousel-caption" >
+                  <h3 style="color: rgb(61, 64, 67);">Positive Rating</h3>
+                  <p style="color: rgb(104, 101, 108);">Suitable Application!</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="fraud2.jpg" alt="Images" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3 style="color: rgb(61, 64, 67);">Negative Rating</h3>
+                  <p style="color: rgb(104, 101, 108);">Fraudulent Application!</p>
+                </div>  
+              </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          
+
+
+          <p><strong></strong> </p>
+          <p>Fraudulent web applications imitate legitimate ones and pose risks like aggressive ADS, 
+            data interception, and device corruption. Users struggle to differentiate between authentic
+             and fake apps. To address this, a platform for user queries before installation is proposed, 
+             using sentiment analysis (VADERS) to analyze ratings and comments, helping identify fraudulent 
+             apps based on user feedback.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>More  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="Machine Learning.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Technologies Used<br><span class="w3-opacity w3-medium">Vader's Algorithm</span></h4>
+                <p>The VADER algorithm is employed to predict fraudulent apps by analyzing user ratings and 
+                  comments. It assesses sentiment intensity, helping to identify negative feedback patterns that might indicate a fake or malicious application.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="Google Play.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium">Google Play Scrapper</span></h4>
+                <p>
+                  Google Play Scraper extracts real-time reviews and ratings from the Google Play Store.
+                   This data is analyzed using the VADER sentiment analysis algorithm to detect negative
+                    sentiment patterns, identifying potentially fraudulent apps based on user feedback.
+                     This approach ensures accurate and efficient fraud detection.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large w3-dark-grey">
+        <div class="w3-center">
+          <h3></h3>
+          <h5>ML & Blockchain Mobility : Secure Ride-Sharing & Seamless Auto Repairs<span class="w3-opacity">  </span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <!-- <img src="runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16"> -->
+
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="ml1.png" alt="Los Angeles" class="d-block" style="width:100%;">
+                <div class="carousel-caption">
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="ml2.png" alt="Chicago" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3 style="color: rgb(61, 64, 67);"></h3>
+                  <p style="color: rgb(104, 101, 108);"></p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="ml3.png" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3 style="color: rgb(61, 64, 67);"></h3>
+                  <p style="color: rgb(104, 101, 108);"></p>
+                </div>  
+              </div>
+              <div class="carousel-item">
+                <img src="blockchain1.jpg" alt="New York" class="d-block" style="width:100%;">
+                <div class="carousel-caption">
+                  <h3 style="color: rgb(61, 64, 67);"></h3>
+                  <p style="color: rgb(104, 101, 108);"></p>
+                </div>  
+              </div>
+
+              <div class="carousel-item">
+                <img src="blockchain2.jpg" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3 style="color: rgb(61, 64, 67);"></h3>
+                  <p style="color: rgb(104, 101, 108);"></p>
+                </div>  
+              </div>
+
+              <div class="carousel-item">
+                <img src="blockchain3.jpg" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3 style="color: rgb(61, 64, 67);"></h3>
+                  <p style="color: rgb(104, 101, 108);"></p>
+                </div>  
+              </div>
+
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          
+
+
+          <p><strong></strong> </p>
+          <p>This project integrates Machine Learning and blockchain technologies to innovate auto repairs and ride-sharing. It features a Mechanical Shop Locator using cosine similarity and vectorization for precise service recommendations based on location and reviews. Simultaneously, a decentralized Carpooling Service employs blockchain for secure, transparent transactions. Extensive testing highlights significant improvements in service accuracy and transaction security, demonstrating the project's transformative potential in transportation services.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>More  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="js.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4></h4>
+                <h4>Technologies Used<br> <span class="w3-opacity w3-medium">Javascript</span></h4>
+                <p>The project uses the MERN stack, comprising MongoDB, Express.js, React, and Node.js. This technology stack enables efficient full-stack development, allowing for robust, scalable, and high-performance applications.
+                 </p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="bchain.png" style="width:90px;">
+              </div>
+              <div class="w3-col 10 m9">
+                <h4><span class="w3-opacity w3-medium">Blockchain</span></h4>
+                <p> Blockchain technology ensures secure, transparent transactions in the carpooling service with its decentralized, immutable ledger. This guarantees tamper-proof data and user trust in handling credentials and payments.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="Machine Learning.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium">Machine Learning</span></h4>
+                <p>Vectorization techniques, cosine similarity, and NLP (Natural Language Processing) algorithms are used to train the model for the project. Vectorization converts text into numerical vectors, cosine similarity measures the similarity between these vectors, and NLP algorithms process and analyze the textual data. NLP enables understanding and interpreting human language, ensuring accurate and relevant service recommendations based on user input.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4 w3-justify">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="Ayush3.jpg" alt="Ayush photo" style="width:100%;opacity: 0.7;" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4 style="padding-top: 10px;">My Name</h4>
+          <p>I am a dedicated and ambitious BTech student currently pursuing my degree at Vishwakarma Institute
+             of Technology, Pune. My academic journey began with a solid foundation in primary and secondary 
+             education at Navjeevan Day School, Nashik, followed by higher secondary studies at Bhonsala 
+             Military College, Nashik. With a strong background in technical education and a passion for
+            continuous learning, I am committed to applying my knowledge and skills to contribute effectively 
+            in a professional environment.</p>
+            <h5>Hobbies and Interests:<h5>
+              <p>Enthusiastically collects currencies from different countries, showcasing a keen interest in global cultures and history.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <!-- <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Denim</span>
+            <br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Sweaters</span>
+            <br>
+            <span>Praes tinci sed</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Workshop</span>
+            <br>
+            <span>Ultricies congue</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Trends</span>
+            <br>
+            <span>Lorem ipsum dipsum</span>
+          </li>
+        </ul>
+      </div>
+      <hr> -->
+
+      
+
+      <!-- Advertising
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Advertise</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle">Your AD Here</span>
+          </div>
+        </div>
+      </div>
+      <hr> -->
+
+      <!-- Technical stacks -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Technical Stack</h4>
+        </div>
+        <div class="w3-container w3-white" style="padding-top: 10px;">
+          <p>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-opacity" style="cursor: pointer;">C</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">JAVA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Data Structures</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Machine Learning</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HTML 5</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">CSS 3</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Advanced Javascript</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">React JS</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Node JS</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Express JS</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MySQL</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MONGODB</span>
+          
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Research</h4>
+        </div>
+        <!--<div class="w3-row-padding w3-white">
+           <div class="w3-col s6">
+            <p><img src="jeans.jpg" alt="Jeans" style="width:100%"></p>
+            <p><img src="team1.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="avatar_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="team4.jpg" alt="Jeans" style="width:100%"></p>
+         </div> 
+       
+        </div>-->
+        <div class="w3-container w3-margin">
+        <p><strong>Paper Title: </strong>"A Novel Approach for Clone App Detection using VADER's Algorithm."<br>
+           <strong>Visibility:</strong> Indexed on Google Scholar and other academic search platforms.<br>
+           <strong> Research Focus:</strong> Pioneering work in the domain of app clone detection.<br>
+           <strong>Contributors:</strong> A collaborative effort by a dedicated team of researchers</p>
+          </div>
+
+        <div class="w3-container w3-margin">
+          <!-- <embed data="Research.pdf" type="application/pdf" width="100%" height="500px"> -->
+              <p>Your browser does not support PDFs. <a href="https://doi.org/10.1051/itmconf/20235601003">Download the PDF</a>.</p>
+         
+      
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin ">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding w3-hover-opacity">
+          
+          <a href="https://www.instagram.com/.aysh.__04?igsh=MWV4ZGE1cWZuaGY4ZA==" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
+          
+      
+          <a href="https://www.linkedin.com/in/ayush-khambayate-63471325b/"><i class="fa fa-linkedin w3-hover-opacity" style="margin-left: 15px;"></i></a>
+          <a href="https://github.com/azino17"><i class="fa fa-github" style="margin-left: 15px;"></i></a>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Contact Through</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p style="padding-top: 8px;">Enter your e-mail below and get in Touch with us</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Submit</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-teal w3-center w3-padding-32">
+      <span onclick="document.getElementById('subscribe').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+      <h2 class="w3-wide"><i class="fa fa-envelope w3-margin-right"></i>Subscribe</h2>
+    </header>
+    <div class="w3-container">
+      <p>Join our mailing list to receive updates and offers.</p>
+      <form id="subscribeForm" action="mailto:aayushkhambayate123@gmail.com" method="get">
+        <p><input class="w3-input w3-border" type="email" id="email" placeholder="Enter e-mail" required name="email"></p>
+        <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"><a href="mailto:aayushkhambayate123@gmail.com" style="text-decoration: none;color: white;" >Subscribe</a></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-white" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="" target="_blank" style="text-decoration: none;">© 2024 Ayush Kiran Khambayate. All rights reserved.
+  </a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+
+
+</script>
+
+</body>
+</html>
